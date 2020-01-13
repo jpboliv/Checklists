@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1CB96F23CC94C2002923B6 /* Checklistitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1CB96E23CC94C2002923B6 /* Checklistitem.swift */; };
 		3C795A1723C8D42D0042F20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C795A1623C8D42D0042F20B /* AppDelegate.swift */; };
 		3C795A1923C8D42D0042F20B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C795A1823C8D42D0042F20B /* SceneDelegate.swift */; };
 		3C795A1E23C8D42D0042F20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C795A1C23C8D42D0042F20B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C1CB96E23CC94C2002923B6 /* Checklistitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklistitem.swift; sourceTree = "<group>"; };
 		3C795A1323C8D42D0042F20B /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C795A1623C8D42D0042F20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C795A1823C8D42D0042F20B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				3C795A1623C8D42D0042F20B /* AppDelegate.swift */,
 				3C795A1823C8D42D0042F20B /* SceneDelegate.swift */,
 				3C795A2A23C8D56D0042F20B /* ChecklistViewController.swift */,
+				3C1CB96E23CC94C2002923B6 /* Checklistitem.swift */,
 				3C795A1C23C8D42D0042F20B /* Main.storyboard */,
 				3C795A1F23C8D42F0042F20B /* Assets.xcassets */,
 				3C795A2123C8D42F0042F20B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				3C795A2B23C8D56D0042F20B /* ChecklistViewController.swift in Sources */,
 				3C795A1723C8D42D0042F20B /* AppDelegate.swift in Sources */,
 				3C795A1923C8D42D0042F20B /* SceneDelegate.swift in Sources */,
+				3C1CB96F23CC94C2002923B6 /* Checklistitem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
