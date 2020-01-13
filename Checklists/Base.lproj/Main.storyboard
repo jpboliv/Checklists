@@ -6,6 +6,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Add Item-->
+        <scene sceneID="fTG-VY-kWr">
+            <objects>
+                <tableViewController id="dPH-F5-pFF" customClass="AddItemTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gMq-b9-tQz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dv6-TA-VBQ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dv6-TA-VBQ" id="7uV-3K-hVw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dPH-F5-pFF" id="hoO-N2-1jI"/>
+                            <outlet property="delegate" destination="dPH-F5-pFF" id="nV7-hm-d8p"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Item" id="Act-nC-3PC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="L9b-mq-RHk">
+                            <connections>
+                                <action selector="cancel" destination="dPH-F5-pFF" id="hf9-p2-Kgb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="0hD-SA-MOd">
+                            <connections>
+                                <action selector="done" destination="dPH-F5-pFF" id="hZn-Gn-INS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1M-HP-bJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="-29"/>
+        </scene>
         <!--Checklists-->
         <scene sceneID="2JX-Nq-nZA">
             <objects>
@@ -46,7 +86,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="KnQ-tZ-t0A">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="t3J-JZ-0Rm">
                             <connections>
-                                <action selector="addItem" destination="h4b-eV-q0o" id="wrA-fJ-00x"/>
+                                <segue destination="dPH-F5-pFF" kind="show" id="92G-O8-iWR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
