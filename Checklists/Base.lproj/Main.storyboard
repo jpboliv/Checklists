@@ -9,7 +9,7 @@
         <!--Add Item-->
         <scene sceneID="fTG-VY-kWr">
             <objects>
-                <tableViewController id="dPH-F5-pFF" customClass="AddItemTableViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="dPH-F5-pFF" customClass="AddItemViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="gMq-b9-tQz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
-                                                        <action selector="done" destination="dPH-F5-pFF" eventType="editingDidEndOnExit" id="8vi-ni-8f8"/>
                                                         <outlet property="delegate" destination="dPH-F5-pFF" id="Uor-Xc-bON"/>
                                                     </connections>
                                                 </textField>
@@ -53,18 +52,18 @@
                     <navigationItem key="navigationItem" title="Add Item" id="Act-nC-3PC">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="L9b-mq-RHk">
                             <connections>
-                                <action selector="cancel" destination="dPH-F5-pFF" id="hf9-p2-Kgb"/>
+                                <action selector="cancel" destination="dPH-F5-pFF" id="ebe-hu-VfH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="0hD-SA-MOd">
                             <connections>
-                                <action selector="done" destination="dPH-F5-pFF" id="hZn-Gn-INS"/>
+                                <action selector="done" destination="dPH-F5-pFF" id="ARG-YE-COf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneBarButton" destination="0hD-SA-MOd" id="Aaj-ba-Wdx"/>
-                        <outlet property="textField" destination="vLn-HN-uw1" id="Sgf-9K-VdI"/>
+                        <outlet property="doneBarButton" destination="0hD-SA-MOd" id="Sbp-Gx-A0e"/>
+                        <outlet property="textField" destination="vLn-HN-uw1" id="UyT-91-xzf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1M-HP-bJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -111,7 +110,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="KnQ-tZ-t0A">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="t3J-JZ-0Rm">
                             <connections>
-                                <segue destination="dPH-F5-pFF" kind="show" id="92G-O8-iWR"/>
+                                <segue destination="dPH-F5-pFF" kind="show" identifier="AddItem" id="92G-O8-iWR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
