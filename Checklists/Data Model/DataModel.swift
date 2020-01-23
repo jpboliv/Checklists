@@ -12,6 +12,7 @@ class DataModel {
     var lists = [Checklist]()
     
     init() {
+//        print("\(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))")
         loadChecklists()
         registerDefaults()
         handleFirstTime()

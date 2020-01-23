@@ -53,6 +53,7 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         } else {
             cell.detailTextLabel!.text = count == 0 ? "Great job mister!" : "\(count) Remaining"
         }
+        cell.imageView!.image = UIImage(named: checklist.iconName)
         return cell
     }
     
